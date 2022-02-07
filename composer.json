@@ -1,5 +1,5 @@
 {
-    "name": "hyqo/",
+    "name": "hyqo/email",
     "description": "",
     "keywords": [
     ],
@@ -11,19 +11,22 @@
         }
     ],
     "require": {
-        "php": ">=8.0"
+        "php": "^7.2|^7.3|^7.4|^8.0|^8.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.0"
+        "phpunit/phpunit": "^8.5"
     },
     "autoload": {
         "psr-4": {
-            "Hyqo\\": "src"
-        }
+            "Hyqo\\Email\\": "src"
+        },
+        "files": [
+            "src/functions.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
-            "Hyqo\\\\Test\\": "tests"
+            "Hyqo\\Email\\Test\\": "tests"
         }
     }
 }
